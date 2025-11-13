@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MentorMap | Smart Learner Identification Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .logo {
+      display: block;
+      margin: 0 auto 25px auto;
+      width: 180px; /* adjust size as needed */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ✅ Logo replaces title and tagline -->
+    <img src="image/logo.jpg" alt="MentorMap Logo" class="logo">
+
+    <div class="auth-container">
+      <div class="tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="registerTab">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <div id="loginForm" class="form active">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button onclick="login()">Login</button>
+      </div>
+
+      <!-- Register Form -->
+      <div id="registerForm" class="form">
+        <input type="text" id="regName" placeholder="Full Name" required />
+        <input type="email" id="regEmail" placeholder="Email" required />
+        <input type="password" id="regPassword" placeholder="Password" required />
+        <button onclick="register()">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
